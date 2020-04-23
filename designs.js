@@ -1,7 +1,7 @@
 // defining variables
 const sizePicker = document.getElementById('sizePicker');
 const table = document.getElementById('pixelCanvas');
-const color = document.getElementById('colorPicker')
+const color = document.getElementById('colorPicker');
 
 // Event Listener function for the submit button
 sizePicker.addEventListener('submit', function(e) {
@@ -15,11 +15,10 @@ sizePicker.addEventListener('submit', function(e) {
     let width = document.getElementById('inputWidth').value;
     
     // here we called the grid function
-    makeGrid(height, width);
-    
-    
-   
+    makeGrid(height, width);   
 });
+
+
 // This is the grid function
 function makeGrid(height, width) {
     // The nested for loop that formed the grid
